@@ -1,0 +1,761 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* styling the nav section */
+
+.logo{
+    width:200px;
+    height:100px;
+    position:relative;
+    left:-2.5em;
+}
+
+.logo img{
+    width:100%;
+    height:100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.2em;
+}
+
+.navigation{
+    margin:2em 0 0 0 ;
+}
+
+li{
+    list-style-type: none;
+    margin-left: 3em;
+    color:white;
+}
+
+li:hover{
+    color:rgb(250, 126, 2) ;
+    transform:scale(1.1);
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.book_now{
+    background: rgb(250, 126, 2) ;
+    padding:0.6em 1.6em 0.6em 1.6em;
+    border-radius:6px;
+    position:relative;
+    bottom: 0.6em;
+}
+
+.book_now:hover{
+    color:black;
+    background-color: white;
+    border: 1.5px solid rgb(250, 126, 2);
+    transition: ease-in-out;
+    transition-duration: 0.252s;
+}
+
+/* styling the 1st part of the site */
+
+.bkgimg{
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0.93;
+    background-image: url("./images/pexels-pavel-danilyuk-9119788.jpg");
+}
+
+.first{
+    height:36.5em;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    padding-top: -10%;
+    height:30em;
+}
+
+.two{
+    text-align: center;
+    color:white;
+    font-size: 1.2em;
+    letter-spacing: 0.15em;
+    font-weight: 600;
+}
+
+.one{
+    font-size:3em;
+    margin-bottom: 0;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.wrapper{
+    display:flex;
+    width:600px;
+    justify-content: center;
+    margin-top: 4%;
+    position: relative;
+}
+
+.searchbar{
+    background:transparent;
+    border:2px solid white;
+    width:330px;
+    height:40px;
+    border-radius:6px 0 0 6px;
+    padding-left: 4.5em;
+    color:white;
+    font-size: 1em;
+}
+
+.searchicon{
+    width:20px;
+    height:20px;
+    position: absolute;
+    top:30%;
+    left:18%;
+}
+
+.searchbutton{
+    background: rgb(250, 126, 2);
+    width:120px;
+    border-radius: 0 6px 6px 0;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbutton:hover{
+    color:black;
+    transform:scale(1.05);
+    transition: ease-in-out;
+    transition-duration: 0.252s;
+    background-color: white;
+    border: 1.5px solid rgb(250, 126, 2);
+}
+.navigation_container{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    margin:0 10% 0 10%;
+}
+
+pre{
+    font-size: 1.5em;
+    margin-top: 0em;
+}
+
+.booking_container{
+    background: white;
+    border-bottom: 3px solid rgb(10, 114, 199);
+    margin:0em 10% 0 10%;  
+    width: 79%;
+    border-radius: 16px;
+    position: absolute;
+    top: 87%;
+    box-shadow: 1.3px 0px 6px 1px  #888888;
+    height:9em;
+    border-top:1.5px solid #888888;
+}
+
+.booking_container div{
+    display:inline-block;
+    margin:30px 20px 10px 40px;
+}
+
+.booking_container div span{
+    display:block;
+    margin-bottom: 8px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.check{
+    border-radius: 6px;
+    height: 3.3em;
+    width:10em;
+    border: 1.5px solid #888888;
+    color:#888888;
+    padding:0 16px 0 16px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.people{
+    border-radius: 6px;
+    height: 2.8em;
+    width:8.5em;
+    border: 1.5px solid #888888;
+    color:#888888;
+    padding:0 16px 0 4px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.check_availability{
+    background: none;
+    border-radius: 6px;
+    border: 1px solid rgb(250, 126, 2);
+    letter-spacing: 1px;
+    font-size: 1.03em;
+    width:14em;
+    padding:1em .1em 1em .3em;
+    position:relative;
+    left:2em;
+    top:-.5em;
+}
+
+.check_availability:hover,
+.click:hover
+{
+    transform:scale(1.05);
+    transition: ease-in-out;
+    transition-duration: 0.252s;
+    background-color:rgb(250, 126, 2);
+    color:white;
+}
+
+.container_20{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    margin:9em 10% 0 10%;
+    column-gap: 1.5em;
+}
+
+.hotel_lounge,
+.vacation_image
+{
+    width:96.5%;
+    height:120%;
+    border-radius: 6px;
+}
+
+.hotel_lounge img,
+.vacation_image img
+{
+    width:100%;
+    height:100%;
+    border-radius: 8px;
+}
+
+.aboutus,
+.vacation_container
+{
+    margin-top: 4em;
+    width:95%;
+}
+
+.about,
+.vacation,
+.Services
+{
+    color:rgb(250, 126, 2);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.blacktext{
+    font-size: 1.6em;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    margin-top: 0.4em;
+    display:block;
+}
+
+.p{
+    margin-top: 0.4em;
+    font-size: 1.1em;
+    letter-spacing: 0.03em ;
+    line-height: 1.3em;
+    color:#888888;
+}
+
+.learnmore{
+    background-color:rgb(250, 126, 2);
+    width: 8em;
+    border-radius: 6px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    height:3em;
+    letter-spacing: 0.03em;
+    margin-top: 2.7em;
+}
+
+.learnmore:hover{
+    color:black;
+    transform:scale(1.05);
+    transition: ease-in-out;
+    transition-duration: 0.252s;
+    background-color: white;
+    border: 1.5px solid rgb(250, 126, 2);
+    cursor: pointer;
+}
+
+.container_21{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    margin:10em 10% 0 10%;
+    column-gap: 3em;
+}
+
+.vacation_container{
+    margin-top:8em;
+}
+
+.services_container,
+.restaurant_menu_container,
+.testimonial_container
+{
+    margin:9.5em 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Our_services,
+.Our_rooms
+{
+    width:52%;
+}
+
+.services_pictures,
+.restaurant_images{
+    display: grid;
+    grid-template-rows:auto auto;
+    grid-template-columns:auto auto auto auto;
+    margin:3em 10% 0 10%;
+    row-gap:1.5em;
+    column-gap: 1.5em;
+    position:relative;
+}
+
+.services_pictures div img,
+.restaurant_images div img
+{
+    width:100%;
+    height:100%;
+    border-radius: 8px;
+}
+
+.resort,
+.chinese
+{
+    grid-area: 1/ 1 / span 2/ span 2;
+}
+
+.t{
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: -2.6em;
+    margin-right: 1.6em;
+    color: white;
+    font-weight: 600;
+}
+
+.facilities{
+    display:grid;
+    grid-template-columns: 34% 35% 34%;
+    margin:3em 10% 0 7%;
+    grid-gap:0;
+}
+
+.facilities .free_wifi,
+.facilities .conceirge_services,
+.facilities .pool_access{
+    background-color: #f3f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column ;
+    justify-content: center;
+    text-align: center;
+    margin:1em 2.5em 2em 2.5em;
+    border-radius: 12px;
+}
+
+.free_wifi:hover,
+.conceirge_services:hover,
+.pool_access:hover
+{
+    background: white;
+    box-shadow: .5px .5px 12px .5px #a8a8a8;
+}
+
+.sub{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.icon{
+    width:80px;
+    height:auto;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.icons{
+    width:170px;
+    height:90px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.q{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary{
+    color:#888888;
+    padding: 1.7em 4em 5.5em 4em;
+}
+
+.our_rooms_container{
+    margin:3em 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rooms_container{
+    margin:3em 18% 0 10%;
+    display: grid;
+    grid-template-columns: 33% 33% 33% ;
+    gap:4em
+}
+
+.executive_image{
+    background: url("./images/pexels-sharath-g-9209422.jpg")  no-repeat;
+    background-size: cover;
+    height:380%;
+    border-radius:12px;
+    background-position:top 1px right -230px;
+    margin-bottom: 1em;
+    width:100%;
+}
+
+.classic_image{
+    background: url("./images/pexels-pixabay-271624.jpg")  no-repeat;
+    background-size: cover;
+    height:380%;
+    border-radius:12px;
+    background-position:bottom 1px right -230px;
+    margin-bottom: 1em;
+    width:100%;
+}
+
+.deluxe_image{
+    background: url("./images/pexels-jonathan-borba-3144580.jpg")  no-repeat;
+    background-size: cover;
+    height:380%;
+    border-radius:12px;
+    background-position:top 1px right -150px;
+    margin-bottom: 1em;
+    width:100%;
+}
+
+.e{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.description{
+    margin:0.5em 10em 0 0;
+    letter-spacing:0.05em;
+    color:#888888;
+}
+
+.click{
+    background: white;
+    border: 1px solid rgb(250, 126, 2);
+    width:5em;
+    border-radius:6px ;
+    color:black;
+    padding: .5em 1em .5em 1em;
+    float: right;
+    margin-top: -2.3em;
+    margin-right: 2em;
+    z-index: 100;
+    position: relative;
+}
+
+.restaurant_menu_container{
+    margin-top: 32em;
+}
+
+.testimonial_container{
+    margin-top: 6em;
+}
+
+.comments{
+    display:flex;
+    flex-direction: row;
+    margin:5em 10% 0 10%;
+    column-gap: 5%;
+}
+
+.quote{
+    background-color:#f3f1f1;
+    width:33%;
+    border-radius: 12px;
+}
+
+.quote:hover{
+    background: white;
+    box-shadow: .5px .5px 12px .5px #a8a8a8;
+}
+
+.quote_img{
+    width: 30px;
+    display: flex;
+    width:80%;
+    margin: 15% 15% 5% 5%;
+    justify-content: flex-end;
+}
+
+.quote_img img{
+    width: 30px;
+}
+
+.quote_img + p{
+    padding: 1em 4em 4em 4em ;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.person_container{
+    padding: 0 0 2em 3em;
+    display: flex;
+    column-gap: 5%;
+}
+
+.person{
+    width:50px;
+}
+
+.person img{
+    width:100%
+}
+
+.person_description p span{
+    font-weight: 700;
+    font-size: 1.35em;
+}
+
+.person_description{
+    font-size: .85em;
+}
+
+.contact_us_container > div {
+    margin-top: 7em;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    height:auto;
+    background-image: url("./images/pexels-pavel-danilyuk-9119788.jpg");
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.contact_us_container > div:before{
+    position: absolute;
+    inset:0;
+    background-color: rgba(0, 0, 0, 0.4);
+    content: "";
+}
+
+.Contact_us_text{
+    text-align: center;
+    font-size: 6vmin;
+    font-weight: 700;
+    margin-bottom: .6em;
+    color: white;
+    padding-top: 2.2em;
+    word-spacing: .05em;
+    position: relative;
+}
+
+.contact_us_text_1{
+    font-size: 2.7vmin;
+    font-weight: 600;
+    margin-bottom: 2em;
+    color: white;
+    padding-top: 1em;
+    text-align: center;
+    position: relative;
+}
+
+
+.contact_us_text_1 + button{
+    background-color: rgb(250, 126, 2);
+    color:white;
+    padding:.8em 1.5em;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-color: rgb(250, 126, 2);
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+.contact_us_text_1 + button:hover{
+    background-color: white;
+    color:black;
+    border:1px solid rgb(250, 126, 2);
+}
+
+.contact_us_text_1 + button + div{
+    color: white;
+    font-size: 1.5em;
+    padding-bottom: 3em;
+    position: relative;
+    display: flex;
+    padding-top: 1.5em;
+    column-gap: 5%;
+}
+
+.contact_us_text_1 + button + div div{
+    width:35px;
+    margin-top: 0.1em;
+}
+
+.contact_us_text_1 + button + div div img{
+    width:100%;
+}
+
+footer > div{
+    display: flex;
+    margin:7em 10% 0 10% ;
+    column-gap: 10%;
+}
+
+footer div span{
+    font-size: 1.1em;
+    font-weight: 700;
+    padding-bottom: 1.5em;
+    display: block;
+}
+
+footer div p{
+    color:#888888;
+    font-size: .9em;
+    line-height: 1.5em;
+}
+
+footer div:first-child{
+    width:auto;
+    padding: 0 1.5em;
+}
+
+footer div:first-child div{
+    margin-left: -1.5em;
+    margin-top: 1em;
+    position: relative;
+}
+
+footer div:first-child div img{
+    width:20px;
+    margin-right: .2em;
+}
+
+img.infinity{
+    position: absolute;
+    top:25%;
+    margin-left: .3em;
+}
+
+footer div:nth-child(2){
+    padding: 0 1.5em;
+}
+
+footer div:nth-child(2) ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: -3em;
+}
+
+footer div:nth-child(2) ul li{
+    margin-bottom: 1em;
+}
+
+footer div:nth-child(2) ul a{
+    list-style-type: none;
+    color:#888888;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-bottom: 5em;
+}
+
+footer div:nth-child(3){
+    padding: 0 1.5em;
+}
+
+footer div:nth-child(3) p{
+    margin-bottom: 1em;
+    font-size: .9em;
+}
+
+footer div:nth-child(4){
+    position: relative;
+}
+
+footer div:nth-child(4) > div{
+    position: absolute;
+    left:-60%;
+    margin-top: 0em;
+}
+
+footer div:nth-child(4) div input{
+    background-color: rgba(250, 126, 2, .15);
+    font-size: .9em;
+    padding: .1em 3.5em;
+    width:50%;
+}
+
+footer div:nth-child(4) div > div{
+    height:2.6em;
+    margin-top: .1em;
+    font-size: .9em;
+}
+
+footer div:nth-child(4) > div img{
+    width:2em;
+    padding-left: 1em;
+}
+
+footer div:nth-child(4) p{
+    position: absolute;
+    top:50%;
+    width:200%;
+    font-size: .9em;
+}
+
+hr{
+    margin: 3em 15%;
+}
+
+hr + p{
+    display: flex;
+    justify-content: center;
+    word-spacing: .1em;
+    font-size: .9em;
+    color:#888888;
+    margin-bottom: 4em;
+}
